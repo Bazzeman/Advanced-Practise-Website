@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+img {
+    margin-top: -75px;
+    width: 100%;
+    height: auto;
+}
