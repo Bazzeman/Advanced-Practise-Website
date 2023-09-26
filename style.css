@@ -1,14 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+    --primary-color: #FF0048;
+    --secondary-color: #747373;
+    --tertairy-color: #F7F5F5;
+    --quaternary-color: #FFFFFF;
+
+    --videoBar-color: #5394A7;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-::-webkit-scrollbar {
-    display: none;
+.background {
+    width: 600px;
+    height: auto;
+    margin: 0px auto 0px auto;
+    background-color: var(--tertairy-color);
 }
 
-img {
-    margin-top: -75px;
-    width: 100%;
-    height: auto;
+h1 {
+    color: var(--primary-color);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+p {
+    color: var(--secondary-color);
+    font-family: Roboto;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+button {
+    width: 129px;
+    height: 17px;
+    border: none;
+    border-radius: 4px;
+    background: var(--quaternary-color);
+    cursor: pointer;
+}
+
+button p {
+    color: var(--secondary-color);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.highlight {
+    background: var(--primary-color);
+}
+
+.highlight p {
+    color: var(--tertairy-color);
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    margin: 11px 16px 0 16px;
+}
+
+.header {
+    margin-top: 20px;
+    height: 130px;
+}
+
+.header img {
+    float: right;
+    margin-right: 16px;
+}
+
+.heading p {
+    margin-top: 7px;
+}
+
+.header .text {
+    margin: 0 29px 0 16px;
+    width: 302px;
+    float: left
+}
+
+.widgets {
+    display: flex;
+    justify-content: space-between;
+    margin: 42px 16px 33px 16px;
+}
+
+.widget {
+    background: var(--quaternary-color);
+    margin: 0 0 0 0;
+    width: 275px;
+    height: 302px;
+}
+
+.widget img {
+    margin: 14px 11px 11px 11px;
+}
+
+.widget h1 {
+    margin: 0 0 5px 11px;
+}
+
+.widget p {
+    margin: 0 11px 11px 14px;
+}
+
+.widget button {
+    margin: 0 11px 14px 135px;
+}
+
+.videoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centeredContent {
+    text-align: center;
+}
+
+.videoContainer .cyanBar {
+    width: 600px;
+    height: 154px;
+    background: var(--videoBar-color);
+    margin: 51px 0 54px 0;
+}
+
+.videoContainer img {
+    margin: -51px 0 -54px 0;
+}
+
+.footer {
+    margin-top: 44px;
 }
