@@ -8,6 +8,7 @@
     --quaternary-color: #FFFFFF;
 
     --videoBar-color: #5394A7;
+    --footer-color: #FABC43;
 }
 
 * {
@@ -19,6 +20,7 @@
     width: 600px;
     height: auto;
     margin: 0px auto 0px auto;
+    padding-bottom: 10px;
     background-color: var(--tertairy-color);
 }
 
@@ -47,6 +49,7 @@ button {
     border-radius: 4px;
     background: var(--quaternary-color);
     cursor: pointer;
+    padding: 2px 0 3px 0;
 }
 
 button p {
@@ -56,6 +59,13 @@ button p {
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+}
+
+.footer p {
+    color: var(--quaternary-color);
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 15px;
 }
 
 .highlight {
@@ -143,5 +153,29 @@ button p {
 }
 
 .footer {
+    background: var(--footer-color);
+    width: 600px;
+    height: 54px;
     margin-top: 44px;
+    padding: 15px 0 0 16px;
+    display: flex;
+}
+
+#footerContactText {
+    width: 100px;
+    height: 54px;
+    margin: 0 19px 8px 0;
+}
+
+#footerNewsText {
+    height: 54px;
+    margin: 0 19px 8px 0;
+}
+
+.footer img {
+    width: 53px;
+    height: 53px;
+    /* I had to improvise the usa of margin here
+    to make the logo look good on the footer. */
+    margin: -6px 17px 12px 27px;
 }
